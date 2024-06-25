@@ -2,13 +2,29 @@
   "name": "react-accessibility-toolkit",
   "version": "1.0.0",
   "description": "A comprehensive library designed to help developers build highly accessible React applications. Provides a collection of components, hooks, and utilities to ensure WCAG compliance.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
+    "lint": "eslint src --ext .ts,.tsx"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hemant-Bhardwaj/react-accessibility-toolkit.git"
+  },
+  "keywords": [
+    "react",
+    "accessibility",
+    "WCAG",
+    "a11y",
+    "components",
+    "hooks",
+    "focus",
+    "react-components"
+  ],
+  "author": "Hemant Bhardwaj hbhardwaj.dev@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
